@@ -1,0 +1,84 @@
+
+.o_list_table .o_col_filter_row th.o_col_filter_cell {
+    padding: 3px 6px 4px;
+    background-color: var(--o-list-row-hover-bg, #f8f5fa);
+    border-bottom: 1px solid var(--o-color-border, #e0d8e6);
+    vertical-align: middle;
+}
+
+.o_list_table .o_col_filter_row th.o_col_filter_spacer {
+    /* checkbox / optional-columns spacer: no input needed */
+    background-color: var(--o-list-row-hover-bg, #f8f5fa);
+}
+
+.o_col_filter_input {
+    display: block;
+    width: 100%;
+    padding: 2px 6px;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--o-main-text-color, #3d3d3d);
+    background-color: #fff;
+    border: 1px solid var(--o-color-border, #ddd);
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    /* Subtle purple accent — matches Odoo enterprise brand */
+    outline: none;
+}
+
+.o_col_filter_input::placeholder {
+    color: #bbb;
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+.o_col_filter_input:focus {
+    border-color: #714b67;
+    box-shadow: 0 0 0 0.12rem rgba(113, 75, 103, 0.25);
+    background-color: #fff;
+}
+
+.o_col_filter_select {
+    appearance: auto;
+    cursor: pointer;
+}
+
+.o_list_table .o_col_filter_clear_row th.o_col_filter_clear_cell {
+    padding: 2px 8px 3px;
+    background-color: var(--o-list-row-hover-bg, #f8f5fa);
+    border-bottom: 1px solid var(--o-color-border, #e0d8e6);
+}
+
+.o_col_filter_clear_btn {
+    color: #714b67;
+    font-size: 0.75rem;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.15s ease;
+}
+
+.o_col_filter_clear_btn:hover {
+    opacity: 1;
+    color: #5d3e56;
+    text-decoration: none;
+}
+
+.o_col_filter_input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.o_col_filter_input[type="date"]:focus::-webkit-calendar-picker-indicator {
+    opacity: 0.8;
+}
+
+.o_col_filter_input[type="number"]::-webkit-inner-spin-button,
+.o_col_filter_input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.o_col_filter_input[type="number"] {
+    -moz-appearance: textfield;
+}
