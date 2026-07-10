@@ -32,4 +32,7 @@
             "list_column_filter_ucs/static/src/list_renderer/list_renderer.css",
         ],
     },
+    "images": ['static/description/banner.gif'],
+    "price": 20,
+    "currency": "USD"
 }
