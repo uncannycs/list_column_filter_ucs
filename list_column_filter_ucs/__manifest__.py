@@ -11,7 +11,7 @@
 #
 ##############################################################################
 {
-    "name": "List View Column Filter Ucs",
+    "name": "List View Column Filter | Odoo List Column Filter | Column-Based Search | List View Filtering | Advanced Column Filter",
     "summary": (
         "Search and filter records by individual columns in list views. "
         "Adds an inline filter row below each column header."
